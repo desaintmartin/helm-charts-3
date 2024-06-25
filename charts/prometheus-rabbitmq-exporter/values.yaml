@@ -71,6 +71,14 @@ annotations: {}
 #  prometheus.io/path: "/metrics"
 #  prometheus.io/port: 9419
 
+# Additional Environment variables
+env: {}
+# - name: REDIS_PASSWORD
+#   valueFrom:
+#     secretKeyRef:
+#       key: redis-password
+#       name: redis-config-0.0.2
+
 prometheus:
   monitor:
     enabled: false
